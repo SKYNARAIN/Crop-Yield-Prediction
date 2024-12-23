@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Production Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1527549993586-dff825b37782') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin-top: 5%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crop Production Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="dist_name">District Name:</label>
+            <input type="text" name="dist_name" placeholder="Enter district name" required>
+
+            <label for="crop_name">Crop Name:</label>
+            <input type="text" name="crop_name" placeholder="Enter crop name" required>
+
+            <label for="area">Area (in hectares):</label>
+            <input type="number" step="any" name="area" placeholder="Enter area in hectares" required>
+
+            <label for="nitrogen">Nitrogen Consumption (kg):</label>
+            <input type="number" step="any" name="nitrogen" placeholder="Enter nitrogen consumption" required>
+
+            <label for="phosphate">Phosphate Consumption (kg):</label>
+            <input type="number" step="any" name="phosphate" placeholder="Enter phosphate consumption" required>
+
+            <label for="potash">Potash Consumption (kg):</label>
+            <input type="number" step="any" name="potash" placeholder="Enter potash consumption" required>
+
+            <label for="rainfall">Yearly Rainfall (mm):</label>
+            <input type="number" step="any" name="rainfall" placeholder="Enter rainfall in mm" required>
+
+            <button type="submit">Predict</button>
+        </form>
+        <div class="footer">
+            <p>Powered by Machine Learning | Agriculture Solutions</p>
+        </div>
+    </div>
+</body>
+</html>
