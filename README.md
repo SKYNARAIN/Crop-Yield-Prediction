@@ -2,6 +2,8 @@
 
 While giving inputs District should have first letter caps, crop name all caps, numerical input is in 0.00 format
 
+View dataset for districts.
+
 In this project you can give inputs and get the output of yield 
 
 Inputs will be in(units):
