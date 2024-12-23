@@ -1,4 +1,4 @@
-# Crop-Yield-Prediction
+# Crop-Yield-Prediction-In-Karnataka
 
 In this project you can give inputs and get the output of yield 
 
