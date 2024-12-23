@@ -15,7 +15,7 @@ potash consumption --> tons
 Rainfall --> millimeters
 
 
-the output (units)
+The output (units)
 
 production --> 1000 tonnes
 
