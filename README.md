@@ -1,6 +1,6 @@
 # Crop-Yield-Prediction-In-Karnataka
 
-While giving inputs District should have first letter caps, crop name all caps, numerical input is in 0.00 format
+Only applicable for land more than 10 hectares
 
 View dataset for districts.
 
